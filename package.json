@@ -1,0 +1,23 @@
+{
+  "name": "nodedocker",
+  "version": "1.0.0",
+  "description": "Sample how to build node/postgres application with Docker containers",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel server.js --out-file compiled-server.js",
+    "dev-start": "babel-watch server.js",
+    "start": "node compiled-server.js"
+  },
+  "author": "Janie C.",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "pg": "^7.4.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7"
+  }
+}
